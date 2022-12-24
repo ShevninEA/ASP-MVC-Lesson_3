@@ -1,10 +1,17 @@
 ﻿namespace ASP_MVC_Lesson_3
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Freelancer freelancer = new Freelancer();
+            freelancer.Print();
+
+            FixWorker fixWorker = new FixWorker();
+            fixWorker.Print();
+
+            Console.ReadKey(true);
+
         }
     }
 }
